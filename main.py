@@ -106,7 +106,7 @@ def create_yaml_files(config):
       read_write: True
 
   instance:
-    M: {config['workload']['Inputs'][0]}
+    M: {config['workload']['Inputs'][0] * config['datawidth']}
     N: {config['workload']['Weights'][1]}
     K: {config['workload']['Inputs'][1]}
 """
