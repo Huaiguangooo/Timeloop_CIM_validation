@@ -28,5 +28,4 @@ if [ -z "$summary_stats" ]; then
 fi
 
 # 打印提取的内容
-echo "提取的内容如下："
 echo "$summary_stats"
