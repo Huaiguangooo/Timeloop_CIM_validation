@@ -10,7 +10,8 @@ To run the CIM implementation, execute the following command:
 bash ./run.sh
 ```
 
-and results will be stored in the ```output``` directory.
+The detailed output files will be generated in the output directory, and a summarized result will be output to the terminal.
+
 ## Configuration
 
 You can adjust the CIM parameters in the ```config.py``` file. Please note that currently, this is a simple implementation that only supports cases where the weight matrix size and CIM array dimensions (rows and columns) are the same.
