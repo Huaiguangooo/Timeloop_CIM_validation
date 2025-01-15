@@ -1,6 +1,6 @@
 rows = 8                 # CIM structure rows
 cols = 4                 # CIM structure columns
-datawidth = 16            # Data bit width
+datawidth = 8            # Data bit width
 workload = {             # Matrix multiplication dimensions
     "Inputs": [32, 8],     # [M, K]
     "Weights": [8, 4]      # [K, N]
