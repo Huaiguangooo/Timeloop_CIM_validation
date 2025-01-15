@@ -22,6 +22,6 @@ You can adjust the CIM parameters in the ```config.py``` file. Please note that 
 
 - Implementing a bit-serial MAC (Multiply-Accumulate) operation is quite complex, and since Timeloop may not support this kind of parameter adjustment (it might still use the typical full-word multiplication), this implementation simulates the process by loading the data into the CIM array in a M * data_width format.
 
-- The total theoretical computation cycle is assumed to be the number of cycles required to multiplying the data_width with the number of GEMV operations (also the number of rows in the input matrix), which corresponds to the result of timeloop simulation.
+- The total theoretical number of computation cycles is assumed to be the number of cycles required to multiply the data_width with the number of GEMV operations (also the number of rows in the input matrix), which corresponds to the result of timeloop simulation.
 
 - For simplicity, this model does not include the cycle needed to load data from SRAM 6T cells into the CIM compute units. However, we can add this cycle later for more accurate simulations if required.
